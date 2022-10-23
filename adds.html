@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add book</title>
+
+<body>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;
+            background-image: url('book.jpg');
+            height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+      }
+        form {border: 3px solid black; width: 750px;}
+        
+        input[type=text], input[type=password] {
+          width: 98%;
+          padding: 10px;
+          margin: 5px 0 ;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+        
+        button {
+          background-color: black;
+          color: white;
+          padding: 14px 20px;
+          margin: 10px 0;
+          border: none;
+          width: 20%;
+        }
+        
+        button:hover {
+          opacity: 0.8;
+        }
+        
+     
+        .container {
+          padding: 50px;
+        }
+        
+        span.psw {
+          float: right;
+          padding-top: 16px;
+        }
+        
+        @media screen and (max-width: 300px) {
+          span.psw {
+             display: block;
+             float: none;
+          }
+          .cancelbtn {
+             width: 100%;
+          }
+        }
+        </style>
+        </head>
+        <body>
+       
+            <center>
+        <h2 style="font-size: 30px; margin-bottom: 10px;color: brown;" >Add Book</h2>
+        <form action="add.php" method="post" name="addbook" >
+        
+          <div class="container" style="font-size: 20px;" >
+            <label for="book"><b>Book Name</b></label>
+            <input type="text" id="bookname" placeholder="" name="bookname" required>
+        
+            <label for="Book author "><b>Author Name </b></label>
+            <input type="text" id="bookauthor" placeholder=""  name="author" required>
+        
+            <label for="Book publications"><b>Book Publications</b></label>
+            <input type="text" id="bookpub" placeholder=""  name="Publications" required> <br><br>
+                <label for="book price"><b>Purchase Date:</label>
+                .    .<input type="date" id="bookprice" name="bookprice">
+              </form>
+        <br><br>
+              <label for="Purchase"><b>Book Price</b></label>
+              <input type="text" placeholder=""  name="bookquantity" required>
+          
+              <label for="date"><b>Return date</b></label>
+              <input type="date" placeholder=""  name="bookdate" required><br><br>
+            
+            <button type="submit" style="margin-top: 5px;margin-bottom: 10px;">Save</button>
+            </div>
+          </center>
+          
+        <center> <br><br> 
+         </center></div>
+        </form>
+
+</body>
+</html>
+

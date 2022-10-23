@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Return book</title>
+
+<body>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        form {border: 3px solid  rgb(224, 223, 223);
+        width: 730px;
+        }
+        
+
+        body{
+            background-color:lightseagreen;
+            /* background-image: url(issuebook.jpeg); */
+            background-position: bottom;
+            background-size:cover;
+        }
+        
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 10px 20px;
+          margin: 1px 0;
+          display: inline-block;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+        
+
+        button {
+          background-color: lightgreen;
+          color: black;
+          font-size: 15px;
+          padding: 10px 20px;
+          margin: 8px 0;
+          border: none;
+          width: 30%;
+          border-radius: 5px;
+        }
+        
+        button:hover {
+          opacity: 1.8;
+          /* background-color: white; */
+        }
+        
+        
+        .container {
+          padding: 50px;
+          font-size: 16px;
+          text-align: center;
+          border-radius: 1px;
+        
+        }
+        
+        span.psw {
+          float: right;
+          padding-top: 16px;
+        }
+        
+        @media screen and (max-width: 300px) {
+          span.psw {
+             display: block;
+             float: none;
+          }
+          .cancelbtn {
+             width: 100%;
+          }
+        }
+        </style>
+        </head>
+         
+        <body>
+       <!-- main div open -->
+         
+
+            
+          <a href="../dashboard.php" style="margin-left: 1200px;background-color: lightblue;color: black; font-size: 14px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">Return to Dashboard</a>
+
+         <div>
+       <center>
+        <h2 style="margin-top: -15px;" >Return Book</h2> 
+     
+        
+         <br><br><br>
+       
+
+        
+         
+          <form action="return.php" method="post" name="returnbook" style="margin-top: -30px;" >
+            <div class="container">
+        <center>
+            <label for="bookname"><b>Book Name   :</b></label>
+            <input type="text" placeholder="" name="bookname" id="bookname" required style="width: 200px;"><br><br>
+        
+            <label for="studentname"><b>Student name: 
+            </b></label>
+            <input type="text" placeholder=""  name="studentname" id="studentname"  required style="width: 200px;">
+         <br><br>
+            <!-- <label for="issuedate"><b>Issued Date :</b></label> -->
+            <!-- <input type="date" placeholder=""  name="issuedate" id="issuedate" required><br><br> -->
+            
+                <label for="returndate"><b>Return Date:</label>
+                <input type="date" id="returndate" placeholder="" name="returndate" id="returndate" ><br><br>
+                <button type="submit">Return Book</button></center>
+            </center>
+            </div>
+          
+        
+            
+       
+      
+         <!-- main div close -->
+          </div>  
+        
+        </form>
+   
+
+
+        
+      </div>
+</body>
+</html>

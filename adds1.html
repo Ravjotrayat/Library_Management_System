@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student </title>
+
+<body>
+    <style>
+        body {
+
+            font-family: Arial, Helvetica, sans-serif;
+             /* width: auto;
+             height: 100px; */
+        }
+        form {
+            border: 3px solid black;
+        }
+        
+        input[type=text], input[type=password] {
+          width: 80%;
+          padding: 10px 20px;
+          margin: 5px 0;
+          display: inline-block;
+          border: 1px solid grey;
+          box-sizing: border-box;
+        }
+        
+        button {
+          background-color: white;
+          color: red;
+          padding: 10px 15px;
+          margin: 8px 0;
+          border: none;
+          width: 20%;
+        }
+        
+        button:hover {
+          opacity: 0.8;
+        }
+        
+        .imgcontainer {
+          text-align: center;
+          margin: 0px 0 0px 0;
+        }
+        
+         img.avatar {
+          /* width: 250px; */
+          /* background-image: url("book1.jpeg");*/
+          background-size:cover; 
+        background-attachment: fixed;
+          /* border-radius: 10%; */
+        }
+         
+        .container {
+          padding: 16px;
+        }
+        
+        span.psw {
+          float: right;
+          padding-top: 16px;
+        }
+        
+        @media screen and (max-width: 300px) {
+          span.psw {
+             display: block;
+             float: none;
+          }
+          .cancelbtn {
+             width: 100%;
+          }
+        }
+        </style>
+        </head>
+            
+        <body background="book1.jpeg" style="background-size: 95%; ">   
+           
+      
+           
+       <center> <h2 style="color: mediumturquoise;font-size: 40px ; margin-top: 10px;margin-bottom: 10px; ">Add Student</h2>
+        
+        <form action="add1.php" method="post" class="addstudent">
+          <div class="imgcontainer">
+           
+          <!-- </div> -->
+        
+          <div class="container" style="color: lightblue;font-size: 18px;">
+            <label for="studentname"><b>Student Name</b></label><br>
+            <input type="text" placeholder="" name="studentname" id="studentname" required>
+        
+           <br><br> <label for="roll_no  "><b> Enrollement No </b></label><br>
+            <input type="type" placeholder=""  name="roll_no" id="roll_no" required>
+        
+           <br><br> <label for="department"><b> Department</b></label><br>
+            <input type="text" placeholder="" id="department" name="department" required><br>
+                
+            <label for="semester"><b>Student Semester </b></label><br>
+            <input type="text" placeholder=""  name="semester" id="semester" required>
+        
+            <!-- <form action="">
+                <label for="DOB"><b>Date of Birth :</label>
+                <input type="date" id="DOB " name="DOB">
+              </form> -->
+        <br>
+              <label for="contact"><b> Student Contact</b></label><br>
+              <input type="number" placeholder="" id="contact" name="contact" required><br>
+          
+             <br><br> <label for="email"><b>Student Email</b></label><br>
+              <input type="text" placeholder=""  name="email" id="email" required>
+            </center>
+            <!-- </div> -->
+            <a href="../dashboard.php" style="color: black; background-color: white; margin-left: 6px;">
+              Return to Dashboard</a> 
+            <center>  
+              <br><button type="submit">Save Info</button> 
+            </center>
+           
+          
+        </form>
+        
+        
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Issue  book</title>
+
+<body>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        form {border: 3px solid  rgb(224, 223, 223);
+        width: 730px;
+        }
+        
+
+        body{
+            background-color:black;
+            background-image: url(issuebook.jpeg);
+            background-position: bottom;
+            background-size:cover;
+        }
+        
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 10px 20px;
+          margin: 1px 0;
+          display: inline-block;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+        
+        
+        button {
+          background-color: black;
+          color: white;
+          padding: 10px 20px;
+          margin: 8px 0;
+          border: none;
+          width: 20%;
+          border-radius: 5px;
+        }
+        
+        button:hover {
+          opacity: 1.8;
+        }
+        
+        
+        .container {
+          padding: 50px;
+        }
+        
+        span.psw {
+          float: right;
+          padding-top: 16px;
+        }
+        
+        @media screen and (max-width: 300px) {
+          span.psw {
+             display: block;
+             float: none;
+          }
+          .cancelbtn {
+             width: 100%;
+          }
+        }
+        </style>
+        </head>
+         
+        <body>
+        <center>
+        <h2>Issue Book</h2> </center>
+        <center>
+        <form action="123.php" method="post" name="issuebook" >
+        
+          <div class="container">
+            <label for="studentname"><b>Student Name</b></label>
+            <input type="text" placeholder="" name="studentname" id="studentname" required>
+        
+            <label for="department"><b>Department  </b></label>
+            <input type="text" placeholder=""  name="department" id="department"  required>
+        
+            <label for="sem"><b>Student Semester</b></label>
+            <input type="text" placeholder=""  name="sem" id="sem" required>
+
+          <label for="contact"><b> Student Contact</b></label>
+            <input type="text" placeholder=""  name="contact" id="contact" required>
+                
+            <label for="email"><b> Student Email</b></label>
+            <input type="text" placeholder=""  name="email" id="email" required>
+        
+            <label for="bname"><b> Books Name</b></label>
+            <input type="text" placeholder=""  name="bname" id="bname" required>
+            <br><br>
+            
+                <label for="date"><b>Issued Date:</label>
+                <input type="date" id="date" name="date">
+         
+            </center>
+        <br><br>
+            </div>
+            <center><button type="submit">Issue Book</button>
+            </center>
+       <br><br><br><br>
+            
+          </div>
+        </form>
+        
+        
+</body>
+</html>
